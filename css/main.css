@@ -1,0 +1,240 @@
+body {
+  font-family: Helvetica;
+  background-color: #eaeef5;
+}
+
+/* Nav Bar Styles */
+.navbar {
+  background-color: #0a3645;
+  padding: 0;
+  position: relative;
+}
+
+.navbar-toggler {
+  /* accounting for the 1 px border of the button from bootstrap */
+  padding-top: 19px;
+  padding-left: 17px;
+}
+
+.navbar-toggler-icon img {
+  height: 13.6px;
+  width: 24.1px;
+}
+
+.nav-item {
+  width: 95.2px;
+  height: 40px;
+}
+
+.nav-item.active {
+  background-color: #4a636c;
+}
+
+.nav-link {
+  font-size: 10px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  text-align: center;
+  color: #ffffff;
+
+}
+
+.nav-name {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.nav-name .name {
+  margin-right: 10px;
+}
+
+.nav-name .down-arrow img{
+  height: 5.1px;
+  width: 9px;
+}
+
+/* icon at the top */
+.icon {
+  height: 25px;
+  width: 25px;
+  background-image: url("../images/Icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  margin-left: -12.5px !important;
+  top: 8px;
+  display: block;
+}
+
+/* table styles */
+.table-holder {
+  margin: 0 auto;
+  padding: 18px;
+}
+
+.table {
+  max-width: 1262px;
+  background-color: #fff;
+  color: #0a3645;
+  border-spacing: 0px;
+  border: none;
+  box-shadow: 0 1px 3px 0 rgba(10, 54, 69, 0.16);
+}
+
+.table td, .table th, .table thead th {
+  border: none;
+}
+
+.table tbody tr {
+  height: 45px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f0f2f5;
+}
+
+.table .top-header th:first-child {
+  font-size: 14px;
+  line-height: 1.21;
+  padding-top: 19px;
+  padding-left: 25px;
+}
+
+.table .top-header th:last-child {
+  font-size: 10px;
+  font-weight: bold;
+  padding-top: 22px;
+  padding-right: 14px;
+  color: #06b4de;
+  text-align: right;
+}
+
+.table .column-headings {
+  box-shadow: 0px 3px 3px -3px rgba(10, 54, 69, 0.16);
+}
+
+.table .column-headings th {
+  font-size: 9px;
+  font-weight: bold;
+  color: #7a8a90;
+}
+
+.table th:first-child {
+  width: 85px;
+}
+
+.table th:nth-child(2) {
+  width: 250px;
+}
+
+.new-category {
+  cursor: pointer;
+}
+
+/* table contents styles */
+.table td:first-child {
+  padding: 17px 12px 18.3px 25px;
+  cursor: move;
+}
+
+.selector {
+  height: 10px;
+  width: 11px;
+  background-image: url("../images/Select.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.table td:nth-child(3) {
+  padding: 14px 12px 10px 12px;
+}
+
+.rectangle-text {
+  width: 21px;
+  height: 21px;
+  border-radius: 5px;
+  background-color: #98cb65;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding: 4px;
+}
+
+.table td:nth-child(4) {
+  padding: 7px 13px 11px 12px;
+}
+
+.delete {
+  height: 27px;
+  width: 27px;
+  background-image: url("../images/Delete.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  padding: 1px;
+  cursor: pointer;
+}
+
+tbody input.form-control {
+  font-size: 12px;
+  margin: -5.5px;
+}
+
+.save {
+  float: right;
+  color: #06b4de;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 8.1px; 
+  padding-right: 1px;
+  cursor: pointer;
+}
+
+/* Media queries */
+/* tablets and up */
+@media (min-width: 768px) { 
+  .navbar {
+    height: 40px;
+  }
+  
+  .navbar-nav {
+    height: 40px;
+  }
+  .nav-link {
+    padding: 0;
+    margin: 15px auto;
+  }
+}
+
+/* smaller than tablets */
+@media (max-width: 767.98px) { 
+  .nav-name {
+    float: right;
+    display: flex;
+  }
+  .navbar-nav {
+    display: inline-block;
+  }
+  .navbar-collapse {
+    background-color: #0a3645;
+  }
+  .nav-link {
+    padding-top: 15px;
+  }
+  .down-arrow {
+    margin-top: 4.5px;
+  }
+  .icon {
+    top: 14px;
+  }
+}
